@@ -15,8 +15,8 @@ body {
 }
 
 .container {
-    max-width: 900px;
-    width: 800px;
+    max-width: 1200px;
+    width: 900px;
     background: #fff;
 
     padding: 40px 60px;
@@ -76,6 +76,12 @@ h3 {
     border-radius: 8px;
     cursor: pointer;
     margin-top: 10px;
+
+    transition: background 0.3s ease-in-out;
+}
+
+#add-to-cart:hover{
+    background: #2f5bb7;
 }
 
 #circle {
@@ -111,10 +117,17 @@ h3 {
     width: 50%;
     cursor: pointer;
     color: #282753;
+    background: #fff;
+    font-size: 14px;
 
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
+}
+
+.btn-container button i{
+    font-size: 20px;
+    color: #282753;
 }
 
 .middle {
