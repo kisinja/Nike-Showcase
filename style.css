@@ -24,6 +24,20 @@ body {
 
     display: flex;
     gap: 140px;
+    position: relative;
+}
+
+.absolute-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    right: -20px;
+    top: 20px;
+    background: #ff96024a;
+    border-radius: 30px;
+    z-index: -1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .details-container {
@@ -80,7 +94,7 @@ h3 {
     transition: background 0.3s ease-in-out;
 }
 
-#add-to-cart:hover{
+#add-to-cart:hover {
     background: #2f5bb7;
 }
 
@@ -125,7 +139,7 @@ h3 {
     gap: 20px;
 }
 
-.btn-container button i{
+.btn-container button i {
     font-size: 20px;
     color: #282753;
 }
@@ -179,6 +193,10 @@ h3 {
     .btn-container button {
         width: 100%;
     }
+
+    .absolute-container {
+        display: none;
+    }
 }
 
 /* Media query for medium devices -> (tablets) */
@@ -208,7 +226,11 @@ h3 {
     }
 
     body {
-        padding: 30px 40px;
+        padding: 30px 90px;
+    }
+
+    .absolute-container {
+        display: none;
     }
 }
 
